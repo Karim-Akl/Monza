@@ -1,10 +1,9 @@
 'use client';
-
 import React, { useState } from 'react';
 import "./header.css";
+import "../../../public/style.css";
+import "../../app/globals.css";
 import Link from 'next/link';
-import "/Users/karimakl/Documents/moneyleek/public/style.css";
-
 const Page = () => {
   const [isActive, setIsActive] = useState(false);
 
