@@ -1,0 +1,192 @@
+
+header {
+  width: 100%;
+}
+
+header .header-class-bg {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  background-color: var(--bodyBG);
+}
+.icon-search{
+  border-radius: 0px 40px 40px 0px;
+  display: flex;
+  margin: auto;
+  justify-self: center;
+  flex-direction: row;
+  align-content: stretch;
+  justify-content: space-evenly;
+  background-color: var(--bodyFont) !important;
+  font-size: xx-large;
+}
+.bg-search{
+  transform: translateX(-30px);
+}
+header .cont-phone {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+header input {
+  border-radius: 80px !important;
+}
+
+header .cont-phone span {
+  font-size: x-large;
+}
+header .cont-phone a {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+header span {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: var(--bodyFont);
+}
+header .nav-header {
+  background-color: var(--back);
+  width: 100%;
+
+
+}
+header .scand-header{
+  padding: 10px;
+  width: 80%;
+  margin: auto;
+}
+header .scand-header{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color :var(--bodyFont);
+}
+header .scand-header li{
+  transition: 0.3s;
+}
+header .scand-header li:hover{
+  color :var(--bodyFont);
+
+}
+
+.ul-par{
+  
+}
+.icon-menu{
+  display:none;
+  font-size: xx-large;
+  position: absolute;
+  right: 30px;
+
+  background-color: var(--bodyFont) ;
+  border-radius: 10px;
+  padding: 5px;
+}
+.icon-menu:active{
+  scale: 0.9;
+}
+.icon-menu:active{
+  scale: 0.9;
+}
+
+
+/* ############################ */
+.image-paner {
+  width: 80%;
+  margin: auto;
+  background-color: var(--bodyBG);
+  border-radius: 20px;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+.image-paner.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.gap-4 {
+  gap: 0.5rem; /* 16px */
+}
+
+.p-4 {
+  padding: 1rem; /* 16px */
+}
+
+.w-12 {
+  width: 3rem; /* 48px */
+}
+
+.h-12 {
+  height: 3rem; /* 48px */
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+/* ################## */
+@media (width < 1700px){
+  header .bg-search{
+    min-width: 400px !important;
+    margin: auto;
+  }
+
+}
+
+@media (width < 1220px){
+  ul.ul-par{
+    display: none !important;
+  }
+  .icon-menu{
+  display: block; 
+  }
+}
+@media (width < 1000px){
+  header .cont-phone{
+    display: none !important;
+  }
+  header .bg-search{
+    min-width: 80% !important;
+  }
+  header .header-class-bg{
+    flex-direction: column-reverse;
+  }
+
+}
